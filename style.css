@@ -1,0 +1,90 @@
+:root {
+  --colour: #080909;
+  --blue: rgb(0, 110, 255);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: var(--colour);
+}
+div.box {
+  border: 3.4px solid var(--blue);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  animation: gkh 0.01s cubic-bezier(0.22,-0.36, 0, 0.89) 0s infinite ;
+  box-shadow: 10px 10px 75px var(--blue);
+
+}
+@keyframes gkh {
+  0% {
+    transform: scale(1);
+    transform: rotateY(36deg);
+    transform: rotateX(60deg);
+  }
+  20% {
+    transform: scaleY(0.95) scaleX(1.05);
+    transform: rotateY(-36deg);
+    transform: rotateX(-60deg);
+  }
+  48% {
+    transform: scaleY(1.1) scaleX(0.9);
+    transform: rotateY(36deg);
+    transform: rotateX(60deg);
+  }
+  68% {
+    transform: scaleY(0.98) scaleX(1.02);
+    transform: rotateX(-60deg);
+    transform: rotateY(-36deg);
+  }
+  80% {
+    transform: rotateY(36deg);
+    transform: rotateX(60deg);
+    transform: scaleY(1.02) scaleX(0.98);
+  }
+  97%,
+  100% {
+    transform: rotateX(-36deg);
+    transform: rotateY(-60deg);
+    transform: scale(1);
+  }
+}
+
+
+div.box2{
+  position: relative;
+  top: -406px;
+  z-index: 1;
+  width: 300px;
+  left: 50px;
+}
+
+div.box3{
+  position: relative;
+  top: -812px;
+  left: 0px;
+  z-index: 1;
+  width: 200px;
+  left: 100px;
+}
+
+div.box4{
+  position: relative;
+  top: -1220px;
+  left: 0px;
+  z-index: 1;
+  width: 100px;
+  left: 152px;
+}
+
+
+div.t{
+  z-index: 5;
+  top: -1450px;
+  color: aqua;
+  position: relative;
+  width: 0.01px;
+  left: 102px;
+  font-size: 50px;
+}
